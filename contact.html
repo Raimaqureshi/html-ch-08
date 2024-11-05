@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+
+    <nav style="background-color: rgb(108, 183, 245); padding: 5px; display: flex;align-items: center; justify-content: center; gap: 15px;">
+        <div class="logo">
+            <a href="index.html">
+                <img src="file:///C:/Users/PASHA%20SONS/Downloads/download-removebg-preview.png" alt="Logo" height="60px" width="90px">
+            </a>
+        </div>
+        <div class="nav-links" style="display: flex; gap: 20px;">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    </nav>
+    <fieldset style="margin: 20px;">
+        <legend>Your Details:</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+    </fieldset>
+    <fieldset style="margin: 20px;">
+        <legend>Your Review:</legend>
+        <label for="how-did-you-hear">How did you hear about us?</label>
+        <select id="how-did-you-hear" name="how-did-you-hear">
+            <option value="google">Google</option>
+            <option value="friend">Friend</option>
+            <option value="advertisement">Advertisement</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label>Would you visit again?</label><br>
+        <input type="radio" id="yes" name="visit-again" value="yes">
+        <label for="yes">Yes</label><br>
+
+        <input type="radio" id="no" name="visit-again" value="no">
+        <label for="no">No</label><br>
+
+        <input type="radio" id="maybe" name="visit-again" value="maybe">
+        <label for="maybe">Maybe</label><br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <input type="checkbox" id="email-updates" name="email-updates">
+        <label for="email-updates">Sign me up for email updates</label><br><br>
+
+        <input type="submit" value="Submit review">
+    </fieldset>
+    <div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.007939153573!2d67.00993981449799!3d24.86073475193053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Karachi%20City%2C%20Sindh!5e0!3m2!1sen!2s!4v1234567890!5m2!1sen!2s"
+            width="700"
+            height="500"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    
+    <footer style="background-color: rgb(108, 183, 245); display: flex; justify-content: center;">
+        <p>Copyright &copy; 2024. All rights reserved.</p>
+</body>
+</html>
