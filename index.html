@@ -5,38 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <style>
+        /* General Styles */
         img {
-    max-width: 100%;
-    height: auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .logo img {
+            height: 60px;
+            width: 90px;
+        }
+
+
+        /* Navigation Styling */
+        nav {
+    background-color: rgb(108, 183, 245);
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 80px; 
+    box-sizing: border-box; 
 }
 
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: rgb(108, 183, 245);
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .nav-links {
+                flex-direction: row;
+                gap: 10px;
+            }
+
+            img {
+                width: 100%;
+                max-width: none;
+            }
+        }
     </style>
 </head>
 <body>
-   
-    <nav style="background-color: rgb(108, 183, 245); padding: 5px; display: flex;align-items: center; justify-content: center; gap: 15px;">
+    <nav>
         <div class="logo">
             <a href="index.html">
                 <img src="file:///C:/Users/PASHA%20SONS/Downloads/download-removebg-preview.png" alt="Logo" height="60px" width="90px">
             </a>
         </div>
-        <div class="nav-links" style="display: flex; gap: 20px;">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-    </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </nav>
     <div>
-        <img src="https://img.freepik.com/foto-gratis/mano-humana-escribiendo-teclado-computadora-noche-generada-ai_188544-31050.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1727654400&semt=ais_hybrid" alt="image" height="400px" width="1300px" style="margin-top: 15px;">
+        <img src="https://img.freepik.com/foto-gratis/mano-humana-escribiendo-teclado-computadora-noche-generada-ai_188544-31050.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1727654400&semt=ais_hybrid" alt="image" style="margin-top: 15px;">
     
-    <p>
-        STC is an innovator in the c digital world, we help our clients identify new opportunities, lead change, and
-        differentiate their brand. Our process is driven by data analysis coupled with a deep understanding of the
-        customer experience. Whether clients need digital marketing services or consulting, they come to us to
-        present themselves effectively in the digital arena.</p>
-</div>
-    <footer style="background-color: rgb(108, 183, 245); display: flex; justify-content: center;">
+        <p>
+            STC is an innovator in the digital world, we help our clients identify new opportunities, lead change, and
+            differentiate their brand. Our process is driven by data analysis coupled with a deep understanding of the
+            customer experience. Whether clients need digital marketing services or consulting, they come to us to
+            present themselves effectively in the digital arena.
+        </p>
+    </div>
+    <footer>
         <p>Copyright &copy; 2024. All rights reserved.</p>
     </footer>
 </body>
